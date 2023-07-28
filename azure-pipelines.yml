@@ -35,7 +35,7 @@ steps:
     MaxArtifactSize: 
     
     
-    - task: DownloadBuildArtifacts@1
+- task: DownloadBuildArtifacts@1
       inputs:
         buildType: 'current'
         downloadType: 'single'
