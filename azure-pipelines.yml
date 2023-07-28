@@ -40,3 +40,11 @@ steps:
     buildType: 'current'
     downloadType: 'single'
     downloadPath: '$(System.ArtifactsDirectory)'
+- task: DownloadBuildArtifacts@1
+  inputs:
+    buildType: 'specific'
+    project: '199a5fbe-7591-409d-8bd2-e55447353c10'
+    pipeline: '1'
+    buildVersionToDownload: 'latest'
+    downloadType: 'single'
+    downloadPath: '$(System.ArtifactsDirectory)'
